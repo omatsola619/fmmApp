@@ -4,11 +4,13 @@ import Feather from '@expo/vector-icons/Feather';
 import {useState} from "react";
 import Features from "../components/Features";
 import {SafeAreaView} from "react-native-safe-area-context";
+import {StatusBar} from "expo-status-bar";
 
 function Home() {
     const [search, setSearch] = useState("");
     return (
         <SafeAreaView style={styles.container}>
+            <StatusBar style="auto" />
             <View style={styles.wrapper}>
                 <View style={styles.header}>
                     <View style={styles.headerLeft}>
