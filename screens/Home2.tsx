@@ -4,6 +4,7 @@ import Dp from "../assets/dp.svg";
 import Feather from "@expo/vector-icons/Feather";
 import {StatusBar} from "expo-status-bar";
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import Features2 from "../components/Features2";
 
 function Home2 () {
     return (
@@ -59,6 +60,8 @@ function Home2 () {
                 {/*features section here */}
                 <View style={styles.features}>
                     <Text style={styles.boardIntroTxt}>Board Features</Text>
+
+                    <Features2 />
                 </View>
             </View>
         </View>
@@ -155,9 +158,10 @@ const styles = StyleSheet.create({
         color: '#404040',
         fontSize: 16,
         fontWeight: 'bold',
+        marginBottom: 20
     },
     features: {
         marginTop: 30,
-        paddingHorizontal: 20
+        paddingHorizontal: 20,
     }
 })
