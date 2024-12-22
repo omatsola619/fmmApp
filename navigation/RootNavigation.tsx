@@ -11,7 +11,6 @@ export default function RootNavigation() {
     return (
             <Stack.Navigator screenOptions={{ headerShown: false }}>
                 <Stack.Screen name="Home" component={BottomTabs} />
-                <Stack.Screen name="Home2" component={Home2} />
             </Stack.Navigator>
     );
 }

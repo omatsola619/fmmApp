@@ -5,6 +5,7 @@ import {useState} from "react";
 import Features from "../components/Features";
 import {SafeAreaView} from "react-native-safe-area-context";
 import {StatusBar} from "expo-status-bar";
+import {myGreeting} from "../const";
 
 function Home() {
     const [search, setSearch] = useState("");
@@ -14,7 +15,7 @@ function Home() {
             <View style={styles.wrapper}>
                 <View style={styles.header}>
                     <View style={styles.headerLeft}>
-                        <Text style={styles.greet}>Good Morning</Text>
+                        <Text style={styles.greet}>{myGreeting()}</Text>
                         <Text style={styles.name}>Omatsola Sunday</Text>
                     </View>
 
